@@ -1,4 +1,83 @@
-<h1>Hello world</h1>
+<h1> {{ title }} </h1>
+
 <p>
-  bonjour
+  {{ username }}
 </p>
+
+<p>
+  {{ success }}
+</p>
+
+<p>
+  year : {{ year }}
+</p>
+
+<p>
+  {{ employees }}
+</p>
+
+
+
+<h3>{{ user.fullname }}</h3>
+<p>{{ user.email }}</p>
+
+
+<p>
+  {{  5 * 25  }}
+</p>
+
+
+<p>
+  today is : {{ getTodaysDate() }}
+</p>
+
+
+
+
+<div  *ngIf="   false   " >
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis odio hic, distinctio iure explicabo, aliquam ad a enim exercitationem nulla animi sed earum dignissimos culpa repellendus dolor consequatur? Recusandae, necessitatibus.
+  </p>
+</div>
+
+
+
+
+<h1>List of user:</h1>
+
+<ul>
+
+
+  <li   *ngFor="let u of users"   >
+    
+    
+    
+    <div  >
+      <h3  [ngClass]="   u.confirmed == true ? 'confirmed' : 'not-confirmed'   "   >
+        {{ u.nom }} {{ u.prenom }}
+      </h3>
+      <p>age: {{ u.age }}</p>
+  
+    </div>
+
+  </li>
+
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+
+<img alt="image" [src]=" photoURL " width="100%"  />
+
+
+<!--  onclick=""  =>  (click)="" -->
+<button  (click)="prev()"  >prev</button>
+<button  (click)="next()" >next</button>
