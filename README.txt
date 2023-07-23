@@ -15,3 +15,20 @@ ng new app_name
 4 - run the project 
 
 ng serve
+
+
+5 - create component
+
+ng g c comp_name
+
+
+6- add bootstrap
+
+https://www.npmjs.com/
+
+npm i bootstrap
+
+
+
+
+

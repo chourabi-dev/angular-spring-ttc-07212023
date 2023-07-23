@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+
+
+
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-4">
+        <app-side-menu  [menu]="menu"   ></app-side-menu>
+      </div>
+
+      <div class="col-sm-8">
+        
+        
+
+        <app-article  *ngFor="let a of articles"
+
+        [title]=" a.title "
+        [content]=" a.content "
+        [likes]=" a.likes "
+        
+        
+        
+        ></app-article>
+        
+
+      </div>
+    </div>
+</div>
