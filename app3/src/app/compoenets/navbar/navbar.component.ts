@@ -7,13 +7,4 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
-
-  today:Date = new Date();
-
-
-
-
-  formtDate(date:Date){
-    return date.getDate()+'/'+(date.getMonth()+1)+'/'+date.getFullYear();
-  }
 }

@@ -8,7 +8,15 @@ import { SideMenu } from 'src/app/models/sideMenu';
 })
 export class SideMenuComponent {
 
+
+  today:Date = new Date();
+
+
   @Input() menu:SideMenu[] = [];
+
+
+
+
 
   
 }

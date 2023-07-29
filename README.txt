@@ -34,3 +34,9 @@ https://getbootstrap.com/
 
 
 
+
+7 - create new pipes
+
+ng g p pipe_name
+
+
