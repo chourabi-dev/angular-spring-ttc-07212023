@@ -8,6 +8,9 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ContactUsPageComponent } from './pages/contact-us-page/contact-us-page.component';
 import { NavbarComponent } from './compoenets/navbar/navbar.component';
 import { ErroPageComponent } from './pages/erro-page/erro-page.component';
+import { TeamComponent } from './pages/team/team.component';
+import { CompanyComponent } from './pages/company/company.component';
+import { UserDetailsComponent } from './pages/user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { ErroPageComponent } from './pages/erro-page/erro-page.component';
     AboutPageComponent,
     ContactUsPageComponent,
     NavbarComponent,
-    ErroPageComponent
+    ErroPageComponent,
+    TeamComponent,
+    CompanyComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,

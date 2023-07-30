@@ -1,4 +1,13 @@
 <app-navbar></app-navbar>
 
 
-<h1>Home page</h1>
+<h3>Home page</h3>
+
+
+<h3>Users</h3>
+
+<ul>
+    <li *ngFor="let user of users">
+        <a [routerLink]="   '/user/details/'+user.id   ">{{ user.fullname }}</a>
+    </li>
+</ul>

@@ -1,0 +1,14 @@
+<p>
+    <a routerLink="/panier">Panier( {{ panierList.length }} )</a>
+</p>
+
+
+<ul>
+    <li *ngFor="let p of products">
+        <h3>{{ p.name }}</h3>
+        <p>
+            {{ p.price | currency }}
+        </p>
+        <button (click)="ajouterPanier(p)" >Ajouter au panier</button>
+    </li>
+</ul>

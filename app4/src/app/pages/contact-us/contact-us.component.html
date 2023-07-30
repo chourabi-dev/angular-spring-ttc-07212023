@@ -1,0 +1,41 @@
+<form  
+[formGroup]="contactForm"    
+(ngSubmit)="sendMessage()"    >
+
+    <div>
+        <label for="">Nom  <span class="error"   *ngIf="contactForm.controls.nom.valid==false" >*</span>   </label>
+        <br>
+        <input type="text"   formControlName="nom" > <br>
+
+
+        <p *ngIf="contactForm.controls.nom.valid==false">
+            <small class="error">This feild is required, ( min 5 chars )</small>
+        </p>
+
+
+    </div>
+    <div>
+        <label for="">Prenom <span class="error"   *ngIf="contactForm.controls.prenom.valid==false" >*</span> </label>
+        <br>
+        <input type="text" formControlName="prenom">
+    </div>
+    <div>
+        <label for="">Email <span class="error"   *ngIf="contactForm.controls.email.valid==false" >*</span></label>
+        <br>
+        <input type="text" formControlName="email">
+    </div>
+    <div>
+        <label for="">Message <span class="error"   *ngIf="contactForm.controls.message.valid==false" >*</span></label>
+        <br>
+        <textarea  formControlName="message"></textarea>
+    </div>
+
+    <div>
+        <button type="submit"  [disabled]=" contactForm.valid == false "   >Envoyer</button>
+    </div>
+
+ 
+
+</form>
+
+ 

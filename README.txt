@@ -40,3 +40,15 @@ https://getbootstrap.com/
 ng g p pipe_name
 
 
+
+
+8 - create a route guard !!
+
+ng g g guard_name
+
+9 - create new service !!
+
+ng g s service_name
+
+
+
