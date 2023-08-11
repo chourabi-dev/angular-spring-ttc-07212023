@@ -48,7 +48,24 @@ ng g g guard_name
 
 9 - create new service !!
 
+
 ng g s service_name
+
+
+
+
+*************** TEST API using postman *********************
+https://www.postman.com/
+
+
+
+
+
+
+
+
+
+
 
 
 

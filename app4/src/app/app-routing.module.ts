@@ -5,15 +5,18 @@ import { PanierComponent } from './pages/panier/panier.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { PromisePageComponent } from './pages/promise-page/promise-page.component';
 import { ObservablePageComponent } from './pages/observable-page/observable-page.component';
+import { UsersPageComponent } from './pages/users-page/users-page.component';
 
 const routes: Routes = [
   /*{ path:'', component:ProductsComponent },
   { path:'panier', component:PanierComponent },*/
 
 
-  { path:'', component:ContactUsComponent },
+  /*{ path:'', component:ContactUsComponent },
   { path:'promise', component:PromisePageComponent },
-  { path:'observable', component:ObservablePageComponent },
+  { path:'observable', component:ObservablePageComponent },*/
+  
+  { path:'', component:UsersPageComponent },
   
   
 ];

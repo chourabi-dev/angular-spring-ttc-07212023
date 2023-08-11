@@ -9,6 +9,9 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PromisePageComponent } from './pages/promise-page/promise-page.component';
 import { ObservablePageComponent } from './pages/observable-page/observable-page.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UsersPageComponent } from './pages/users-page/users-page.component'
+
 
 @NgModule({
   declarations: [
@@ -17,13 +20,15 @@ import { ObservablePageComponent } from './pages/observable-page/observable-page
     PanierComponent,
     ContactUsComponent,
     PromisePageComponent,
-    ObservablePageComponent
+    ObservablePageComponent,
+    UsersPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
