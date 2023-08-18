@@ -1,0 +1,54 @@
+<div class="container mt-5">
+    <div>
+        <h3>List des voitures</h3>
+        <p class="text-muted">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nulla deleniti minus ipsam, adipisci voluptatibus. Perferendis obcaecati commodi nobis, nostrum, earum veritatis error tempora pariatur fugit cumque, sunt consequuntur temporibus?
+        </p>
+    </div>
+
+    <div>
+        <a routerLink="/add" class="btn btn-outline-primary">Ajouter une voiture</a>
+    </div>
+
+
+
+
+    <!-- content !!!-->
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Mark</th>
+                    <th>Model</th>
+                    <th>Immatruclation</th>
+                    <th>Year</th>
+                    <th>Color</th>
+                    <th>Actions</th>
+                    
+                    
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let v of voitures">
+                    <td>{{ v.id }}</td>
+                    <td>{{ v.mark }}</td>
+                    <td>{{ v.model }}</td>
+                    <td>{{ v.matricule }}</td>
+                    <td>{{ v.year }}</td>
+                    <td>
+                        <div [style.backgroundColor]="v.color" class="voiture-color-bloc"></div>
+                    </td>
+                    <td>
+                        <a [routerLink]="'/update/'+v.id" class="btn btn-secondary btn-sm">update</a>
+                        
+                        <button (click)="deleteVoiture(v.id)" class="btn btn-danger btn-sm">delete</button>
+                        
+                    </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
